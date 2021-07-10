@@ -1,0 +1,24 @@
+/*! Reset default values in css */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "CodeNext";
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+button {
+    outline: none;
+    border: none;
+}

@@ -1,0 +1,189 @@
+/*! Responsive style for all screens*/
+
+@media only screen and (max-width: 9999px) {
+    .menu-res-btn {
+        display: none;
+    }
+    .mobile-menu {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 1800px) {
+    .images-slider {
+        position: relative;
+        right: 2%;
+    }
+}
+@media only screen and (max-width: 1670px) {
+    .slide-image.active {
+        left: -10%;
+    }
+    .slide-image {
+        transform: scale(0.8);
+    }
+    .navigation-dots {
+        right: 1%;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .slide {
+        transform: scale(0.8);
+    }
+}
+@media only screen and (max-width: 1070px) {
+    ul.menu {
+        margin-right: 1em;
+    }
+    .logo {
+        margin-left: 1em;
+    }
+    ul.menu li a {
+        font-size: 0.95em;
+    }
+    .systems-support-images img {
+        padding: 0;
+    }
+    .download-text {
+        margin-top: 5em;
+    }
+    .sec {
+        width: 25%;
+    }
+    .opensource-text {
+        margin-top: 2em;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .slider-container {
+        display: none;
+    }
+    .main-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .app-desc {
+        width: 100%;
+    }
+    .sec {
+        width: 20em;
+        height: 23em;
+    }
+    .sec img {
+        width: 50%;
+    }
+    .app-desc {
+        text-align: center;
+    }
+    .app-desc h2 {
+        margin-left: 0;
+    }
+    .buttons-container a {
+        margin: 0 3em;
+    }
+}
+@media only screen and (max-width: 900px) {
+    ul.menu li {
+        padding: 0.5em 0.5em;
+        margin: 0.2em;
+    }
+    ul.menu li a {
+        font-size: 0.85em;
+    }
+    ul.menu {
+        margin-right: 0em;
+    }
+    .logo {
+        margin-left: 0em;
+    }
+    .logo img {
+        width: 6.5rem;
+    }
+    .logo h2 {
+        font-size: 1.2em;
+    }
+    .indicator {
+        height: 2em;
+    }
+    .sec {
+        margin: 1em;
+        margin-top: 3em;
+    }
+    .support-text {
+        margin-left: 1em;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none !important;
+    }
+    .menu-res-btn {
+        display: block;
+    }
+    .mobile-menu {
+        display: flex !important;
+    }
+    .logo {
+        margin-left: 5rem;
+    }
+    .download-links {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .sec {
+        margin-top: 0em;
+        height: 18em;
+        position: relative;
+        top: 3em;
+    }
+    #Systemsupported {
+        flex-direction: column;
+    }
+    .support-text {
+        margin-left: 0;
+        margin-bottom: 4em;
+        width: 100%;
+    }
+    .systems-support-images img {
+        width: 50%;
+        margin: 0 auto;
+        right: 0;
+    }
+    .systems-support-images {
+        width: 100%;
+        padding: 3em;
+    }
+    .about-text {
+        padding: 1em;
+    }
+    .social-media a img {
+        width: 5em;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .logo {
+        margin-left: 0em;
+    }
+    .menu-res-btn {
+        margin-right: 1em;
+    }
+    .buttons-container a {
+        margin: 0 1em;
+    }
+    .creator {
+        margin-left: 1em;
+    }
+    .player-btn {
+        margin-right: 1em;
+    }
+    .sec {
+        width: 50%;
+        height: 50%;
+        position: relative;
+        top: 1em;
+    }
+    .sec a {
+        font-size: 1em;
+    }
+}

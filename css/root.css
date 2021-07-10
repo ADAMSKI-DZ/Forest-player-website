@@ -1,0 +1,9 @@
+/*! Code Next colors */
+:root {
+    --main-color: rgba(52,152,219,1);
+    --second-color: #2980B9;
+    --text-color: #ffffff;
+    --gray-color: #b4b3b3;
+    --dark-color: #33485d;
+    --black-color: #000000;
+}
