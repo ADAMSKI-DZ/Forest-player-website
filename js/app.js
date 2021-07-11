@@ -7,9 +7,9 @@ function defaultMarker() {
   indicator.style.left = home.offsetLeft + "px";
   indicator.style.width = home.offsetWidth + "px";
 }
-setTimeout(() => {
+setInterval(() => {
   defaultMarker();
-}, 100);
+}, 800);
 
 function marker(e) {
   indicator.style.left = e.offsetLeft + -10 + "px";
@@ -187,7 +187,7 @@ menuRes.addEventListener("click", () => {
   mobileMenu.classList.toggle("active");
   menuRes.classList.toggle("animate");
 });
-const listMobile = document.querySelectorAll('.list-mobile');
+const listMobile = document.querySelectorAll(".list-mobile");
 for (let i = 0; i < menu.length; i++) {
   listMobile[i].onclick = function () {
     let m = 0;
@@ -202,8 +202,6 @@ for (let i = 0; i < menu.length; i++) {
     pages[i].className = "page active";
   };
 }
-
-
 
 //*Download btn click to go to download page
 const downloadPage = document.querySelector(".download");
