@@ -7,9 +7,9 @@ function defaultMarker() {
   indicator.style.left = home.offsetLeft + "px";
   indicator.style.width = home.offsetWidth + "px";
 }
-setInterval(() => {
+setTimeout(() => {
   defaultMarker();
-}, 800);
+}, 500);
 
 function marker(e) {
   indicator.style.left = e.offsetLeft + -10 + "px";
