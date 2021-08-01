@@ -20,19 +20,18 @@ menu.forEach((link) => {
     marker(e.target);
   });
 });
-
 for (let i = 0; i < menu.length; i++) {
   menu[i].onclick = function () {
     let m = 0;
     while (m < menu.length) {
-      menu[m++].className = "list";
+      menu[m++].classList.remove("active");
     }
-    menu[i].className = "list active";
+    menu[i].classList.add("active");
     let t = 0;
     while (t < menu.length) {
-      pages[t++].className = "page";
+      pages[t++].classList.remove("active");
     }
-    pages[i].className = "page active";
+    pages[i].classList.add("active");
   };
 }
 //*Cursor Shape Tracker
@@ -55,7 +54,6 @@ document.addEventListener("mouseout", () => {
 });
 
 //*Image Slider with navigation dots
-
 const imageSlide = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
 for (let i = 0; i < imageSlide.length; i++) {
@@ -74,21 +72,32 @@ for (let i = 0; i < imageSlide.length; i++) {
 }
 
 //*Auto image slider random change
-setInterval(() => {
-  for (let i = 0; i < imageSlide.length; i++) {
-    let k = Math.floor(Math.random() * 3 + 0);
-    let m = 0;
-    while (m < dots.length) {
-      dots[m++].className = "dot";
-    }
-    dots[k].className = "dot active";
-    let t = 0;
-    while (t < imageSlide.length) {
-      imageSlide[t++].className = "slide";
-    }
-    imageSlide[k].className = "slide active";
+const autoChange = (e) => {
+  let m = 0;
+  while (m < dots.length) {
+    dots[m++].classList.remove("active");
   }
-}, 5000);
+  dots[i].classList.add("active");
+  let n = 0;
+  while (n < imageSlide.length) {
+    imageSlide[n++].classList.remove("active");
+  }
+  imageSlide[i].classList.add("active");
+};
+let i = 0;
+const autoNum = () => {
+  setTimeout(() => {
+    autoChange(i);
+    i++;
+    if (i <= dots.length) {
+      autoNum();
+    }
+    if (i === dots.length) {
+      i = 0;
+    }
+  }, 3000);
+};
+autoNum();
 
 // !Mouse Hover all
 const logo = document.querySelector(".logo-cursor");
